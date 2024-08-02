@@ -2575,7 +2575,7 @@ Game.Launch=function()
 				if (!App && Game.heralds==0) str+=loc("There are no heralds at the moment. Please consider <b style=\"color:#bc3aff;\">donating to our Patreon</b>!");
 				else
 				{
-					str+='<b style="color:#bc3aff;text-shadow:0px 1px 0px #6d0096;">'+loc("%1 herald",Game.heralds)+'</b> '+loc("selflessly inspiring a boost in production for everyone, resulting in %1.",'<br><b style="color:#cdaa89;text-shadow:0px 1px 0px #7c4532,0px 0px 6px #7c4532;"><div style="width:16px;height:16px;display:inline-block;vertical-align:middle;background:url(img/money.png);"></div>'+loc("+%1% cookies per second",Game.heralds)+'</b>');
+					str+='<b style="color:#bc3aff;text-shadow:0px 1px 0px #6d0096;">'+loc("%1 herald",Game.heralds)+'</b> '+loc("selflessly inspiring a boost in production for everyone, resulting in %1.",'<br><b style="color:#cdaa89;text-shadow:0px 1px 0px #7c4532,0px 0px 6px #7c4532;"><div style="width:16px;height:16px;display:inline-block;vertical-align:middle;background:url(img/money.webp);"></div>'+loc("+%1% cookies per second",Game.heralds)+'</b>');
 					str+='<div class="line"></div>';
 					if (Game.ascensionMode==1) str+=loc("You are in a <b>Born again</b> run, and are not currently benefiting from heralds.");
 					else if (Game.Has('Heralds')) str+=loc("You own the <b>Heralds</b> upgrade, and therefore benefit from the production boost.");
@@ -2584,7 +2584,7 @@ Game.Launch=function()
 			}
 			str+='<div class="line"></div><span style="font-size:90%;opacity:0.6;">'+(!App?loc("<b>Heralds</b> are people who have donated to our highest Patreon tier, and are limited to 100.<br>Each herald gives everyone +1% CpS.<br>Heralds benefit everyone playing the game, regardless of whether you donated."):loc("Every %1 current players on Steam generates <b>1 herald</b>, up to %2 heralds.<br>Each herald gives everyone +1% CpS.",[100,100]))+'</span><div class="line"></div>'+tinyIcon([21,29]);
 			
-			str+='<div style="width:31px;height:39px;background:url(img/heraldFlag.png);position:absolute;top:0px;left:8px;"></div><div style="width:31px;height:39px;background:url(img/heraldFlag.png);position:absolute;top:0px;right:8px;"></div>';
+			str+='<div style="width:31px;height:39px;background:url(img/heraldFlag.webp);position:absolute;top:0px;left:8px;"></div><div style="width:31px;height:39px;background:url(img/heraldFlag.webp);position:absolute;top:0px;right:8px;"></div>';
 			
 			return '<div style="padding:8px;width:300px;text-align:center;" class="prompt" id="tooltipHeralds"><h3>'+loc("Heralds")+'</h3><div class="block">'+str+'</div></div>';
 		},'this');
@@ -5759,7 +5759,7 @@ Game.Launch=function()
 					//me.l.style.top=me.y+'px';
 					me.l.style.width='167px';
 					me.l.style.height='212px';
-					me.l.style.backgroundImage='url('+Game.resPath+'img/frostedReindeer.png)';
+					me.l.style.backgroundImage='url('+Game.resPath+'img/frostedReindeer.webp)';
 					me.l.style.opacity='0';
 					//me.l.style.transform='rotate('+(Math.random()*60-30)+'deg) scale('+(Math.random()*1+0.25)+')';
 					me.l.style.display='block';
@@ -10376,7 +10376,7 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Violet macarons',desc:'It\'s like spraying perfume into your mouth!',icon:[24,4],require:'Box of macarons',							power:3,price: 9999999999999999999});
 		
 		order=40000;
-		new Game.Upgrade('Magic shenanigans',loc("Cookie production <b>multiplied by 1,000</b>.")+'<q>It\'s magic. I ain\'t gotta explain sh<div style="display:inline-block;background:url(img/money.png);width:16px;height:16px;position:relative;top:4px;left:0px;margin:0px -2px;"></div>t.</q>',7,[17,5]);//debug purposes only
+		new Game.Upgrade('Magic shenanigans',loc("Cookie production <b>multiplied by 1,000</b>.")+'<q>It\'s magic. I ain\'t gotta explain sh<div style="display:inline-block;background:url(img/money.webp);width:16px;height:16px;position:relative;top:4px;left:0px;margin:0px -2px;"></div>t.</q>',7,[17,5]);//debug purposes only
 		Game.last.pool='debug';
 		
 		
@@ -12058,7 +12058,7 @@ Game.Launch=function()
 					(out.message?(
 						'<div class="line"></div>'+
 						'<div>'+loc("There's a note too!")+'</div>'+
-						'<textarea id="giftMessage" spellcheck="false" style="color:#000;width:100%;height:64px;font-size:11px;font-weight:bold;padding:8px 16px;box-sizing:border-box;margin:0px 3px;text-align:center;background:url('+Game.resPath+'img/messageBG.png);background-position:center -50px;box-shadow:0px 0px 16px rgba(98,92,72,1) inset;text-shadow:0px 0px 2px rgba(98,92,72,1);overflow:hidden;" readonly></textarea>'
+						'<textarea id="giftMessage" spellcheck="false" style="color:#000;width:100%;height:64px;font-size:11px;font-weight:bold;padding:8px 16px;box-sizing:border-box;margin:0px 3px;text-align:center;background:url('+Game.resPath+'img/messageBG.webp);background-position:center -50px;box-shadow:0px 0px 16px rgba(98,92,72,1) inset;text-shadow:0px 0px 2px rgba(98,92,72,1);overflow:hidden;" readonly></textarea>'
 					):'')+
 					'<div class="line"></div>'+
 					'<div>'+loc("How nice!")+'</div>'+
@@ -12084,7 +12084,7 @@ Game.Launch=function()
 						'<div><div style="display:inline-block;vertical-align:middle;width:55%;margin-right:8px;">'+loc("You may put between %1 and %2 cookies in the gift box.",[1,1000])+'</div><div style="display:inline-block;vertical-align:middle;width:38%;">'+'<div class="hasTinyCookie" style="display:inline-block;font-weight:bold;">'+loc("Cookies")+'</div><input type="text" style="text-align:center;width:100%;font-weight:bold;" id="giftAmount" value="'+(1+Math.floor(Math.random()*999))+'"/></div></div>'+
 						'<div class="line"></div>'+
 							'<div>'+loc("You can leave a note. Don't be rude!<br>Maximum %1 lines and %2 characters.",[4,100])+'</div>'+
-							'<textarea id="giftMessage" maxlength="100" spellcheck="false" style="color:#000;width:100%;height:64px;font-size:11px;font-weight:bold;padding:8px 16px;box-sizing:border-box;margin:0px 3px;text-align:center;background:url('+Game.resPath+'img/messageBG.png);background-position:center -50px;box-shadow:0px 0px 16px rgba(98,92,72,1) inset;text-shadow:0px 0px 2px rgba(98,92,72,1);overflow:hidden;"></textarea>'+
+							'<textarea id="giftMessage" maxlength="100" spellcheck="false" style="color:#000;width:100%;height:64px;font-size:11px;font-weight:bold;padding:8px 16px;box-sizing:border-box;margin:0px 3px;text-align:center;background:url('+Game.resPath+'img/messageBG.webp);background-position:center -50px;box-shadow:0px 0px 16px rgba(98,92,72,1) inset;text-shadow:0px 0px 2px rgba(98,92,72,1);overflow:hidden;"></textarea>'+
 						'<div class="line"></div>'+
 						'<div class="optionBox" style="margin:-4px 0px;clear:both;overflow:hidden;">'+
 							'<div style="'/*float:left;width:49%;*/+'">'+
@@ -13101,7 +13101,7 @@ Game.Launch=function()
 		Game.BankAchievement('Are you gonna eat all that?');
 		Game.BankAchievement('We\'re gonna need a bigger bakery');
 		Game.BankAchievement('In the mouth of madness','A cookie is just what we tell each other it is.');
-		Game.BankAchievement('Brought to you by the letter <div style="display:inline-block;background:url(img/money.png);width:16px;height:16px;"></div>');
+		Game.BankAchievement('Brought to you by the letter <div style="display:inline-block;background:url(img/money.webp);width:16px;height:16px;"></div>');
 		
 		
 		Game.CpsAchievement('A world filled with cookies');
@@ -13724,7 +13724,7 @@ Game.Launch=function()
 				},100);
 			}
 			var x=Game.T;
-			return this.desc+'<q>'+loc("Everyone's here.")+'<div id="parade" style="position:absolute;left:-11px;right:-11px;height:32px;background:url('+Game.resPath+'img/parade.png) -'+x+'px '+(Game.T%20<10?0:32)+'px;"></div><div style="margin-bottom:32px;"></div>'+loc("Won't you have some cookies too?")+'</q>';
+			return this.desc+'<q>'+loc("Everyone's here.")+'<div id="parade" style="position:absolute;left:-11px;right:-11px;height:32px;background:url('+Game.resPath+'img/parade.webp) -'+x+'px '+(Game.T%20<10?0:32)+'px;"></div><div style="margin-bottom:32px;"></div>'+loc("Won't you have some cookies too?")+'</q>';
 		};
 		
 		order=1000;new Game.Achievement('What\'s not clicking',loc("Make <b>%1</b> from clicking.",loc("%1 cookie",LBeautify(1e31))),[11,36]);
@@ -15258,7 +15258,7 @@ Game.Launch=function()
 				{
 					if (false && Game.bgType!=0 && Game.ascensionMode!=1)
 					{
-						//l('backgroundCanvas').style.background='url('+Game.resPath+'img/shadedBordersSoft.png) 0px 0px,url('+Game.resPath+'img/bgWheat.jpg) 50% 50%';
+						//l('backgroundCanvas').style.background='url('+Game.resPath+'img/shadedBordersSoft.webp) 0px 0px,url('+Game.resPath+'img/bgWheat.webp) 50% 50%';
 						//l('backgroundCanvas').style.backgroundSize='100% 100%,cover';
 					}
 					else

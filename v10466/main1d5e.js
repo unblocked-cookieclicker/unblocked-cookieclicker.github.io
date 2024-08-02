@@ -1811,33 +1811,33 @@ Game.Launch=function()
 			if ((Game.elderWrath==1 && Math.random()<1/3) || (Game.elderWrath==2 && Math.random()<2/3) || (Game.elderWrath==3))
 			{
 				this.wrath=1;
-				if (Game.season=='halloween') me.style.background='url(img/spookyCookie.png)';
-				else me.style.background='url(img/wrathCookie.png)';
+				if (Game.season=='halloween') me.style.background='url(img/spookyCookie.webp)';
+				else me.style.background='url(img/wrathCookie.webp)';
 			}
 			else
 			{
 				this.wrath=0;
-				me.style.background='url(img/goldCookie.png)';
+				me.style.background='url(img/goldCookie.webp)';
 			}
 			//fancy visual stuff
 			var r=Math.floor(Math.random()*360);
 			if (Game.season=='halloween' && this.wrath) r=Math.floor(Math.random()*36-18);
 			if (Game.season=='valentines')
 			{
-				me.style.background='url(img/hearts.png)';
+				me.style.background='url(img/hearts.webp)';
 				me.style.backgroundPosition=-(Math.floor(Math.random()*8)*96)+'px 0px';
 				r=Math.floor(Math.random()*36-18);
 				if (this.wrath) r+=180;
 			}
 			else if (Game.season=='fools')
 			{
-				me.style.background='url(img/contract.png)';
+				me.style.background='url(img/contract.webp)';
 				r=Math.floor(Math.random()*8-4);
-				if (this.wrath) me.style.background='url(img/wrathContract.png)';
+				if (this.wrath) me.style.background='url(img/wrathContract.webp)';
 			}
 			else if (Game.season=='easter')
 			{
-				me.style.background='url(img/bunnies.png)';
+				me.style.background='url(img/bunnies.webp)';
 				var picX=Math.floor(Math.random()*4);
 				var picY=0;
 				if (this.wrath) picY=1;
@@ -2110,7 +2110,7 @@ Game.Launch=function()
 			
 			if (this.type=='reindeer')
 			{
-				me.style.backgroundImage='url(img/frostedReindeer.png)';
+				me.style.backgroundImage='url(img/frostedReindeer.webp)';
 			}
 			
 			//fancy visual stuff
@@ -2520,7 +2520,7 @@ Game.Launch=function()
 		{
 			//l('sectionMiddle').style.display='none';
 			//l('sectionRight').style.display='none';
-			//l('backgroundLayer2').style.background='#000 url(img/darkNoise.png)';
+			//l('backgroundLayer2').style.background='#000 url(img/darkNoise.webp)';
 			Game.veil=1;
 		}
 		Game.veilOff=function()
@@ -2854,7 +2854,7 @@ Game.Launch=function()
 					{
 						santaStr+='<div '+Game.getTooltip(
 						'<div style="min-width:200px;text-align:center">'+Game.santaLevels[i]+'</div>'
-						,'bottom-right')+' style="width:96px;height:96px;margin:2px;float:left;background:url(img/santa.png) '+(-i*96)+'px 0px;"></div>';
+						,'bottom-right')+' style="width:96px;height:96px;margin:2px;float:left;background:url(img/santa.webp) '+(-i*96)+'px 0px;"></div>';
 					}
 					santaStr+='<div style="clear:both;"></div>';
 				}

@@ -64,7 +64,7 @@ body
 	user-select: none;
 	
 	color:#fff;
-	background:#000 url(img/darkNoise.png);
+	background:#000 url(img/darkNoise.webp);
 	font-family:Tahoma,Arial,sans-serif;
 	font-size:13px;
 }
@@ -262,11 +262,11 @@ oh forget it this is just a mess
 /*
 #backgroundLayer1
 {
-	background:url(img/bgBlue.jpg);
+	background:url(img/bgBlue.webp);
 }
 #backgroundLayer2
 {
-	background:#000 url(img/darkNoise.png);
+	background:#000 url(img/darkNoise.webp);
 }
 */
 #backgroundCanvas,#backgroundLeftCanvas
@@ -283,7 +283,7 @@ oh forget it this is just a mess
 	top:0px;
 	width:100%;
 	height:32px;
-	background:url(img/darkNoise.png);
+	background:url(img/darkNoise.webp);
 	box-shadow:0px -2px 4px #666 inset;
 	color:#ccc;
 }
@@ -301,7 +301,7 @@ oh forget it this is just a mess
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background:url(img/darkNoise.png);
+	background:url(img/darkNoise.webp);
 	text-align:center;
 	z-index:100000000000;
 	line-height:150%;
@@ -341,7 +341,7 @@ oh forget it this is just a mess
 }
 #game.onMenu #sectionMiddle
 {
-	background:#000 url(img/darkNoise.png);
+	background:#000 url(img/darkNoise.webp);
 }
 #sectionRight
 {
@@ -355,7 +355,7 @@ oh forget it this is just a mess
 
 #sectionLeft .blackGradient
 {
-	background:url(img/blackGradient.png) repeat-x bottom;
+	background:url(img/blackGradient.webp) repeat-x bottom;
 	position:absolute;
 	left:0px;
 	right:0px;
@@ -376,7 +376,7 @@ oh forget it this is just a mess
 
 .framed
 {
-	background:#000 url(img/darkNoise.png);
+	background:#000 url(img/darkNoise.webp);
 	padding:4px 8px;
 	margin:4px;
 	border:3px ridge #d2e248;
@@ -509,7 +509,7 @@ q:after
 	position:absolute;
 	left:0px;
 	top:2px;
-	background:url(img/money.png);
+	background:url(img/money.webp);
 	width:16px;
 	height:16px;
 }
@@ -536,15 +536,15 @@ q:after
 	position:absolute;
 	left:-128px;
 	top:-128px;
-	/*background:url(img/perfectCookie.png);
+	/*background:url(img/perfectCookie.webp);
 	background-size:256px 256px;*/
-	background:url(img/empty.png);/* somehow necessary; an empty div with no background seems to be click-through */
+	background:url(img/empty.webp);/* somehow necessary; an empty div with no background seems to be click-through */
 	cursor:pointer;
 	z-index:10000;
 }
 .elderWrath #bigCookie
 {
-	background:url(img/imperfectCookie.png);
+	background:url(img/imperfectCookie.webp);
 	background-size:256px 256px;
 }
 #cookieNumbers{position:absolute;top:-80px;}
@@ -565,7 +565,7 @@ q:after
 	width:32px;
 	height:32px;
 	position:absolute;
-	background:url(img/cursor.png);
+	background:url(img/cursor.webp);
 }
 .cookieParticle
 {
@@ -574,7 +574,7 @@ q:after
 	margin-left:-32px;
 	margin-top:-32px;
 	position:absolute;
-	background:url(img/smallCookies.png);
+	background:url(img/smallCookies.webp);
 	opacity:0;
 }
 #particles {position:absolute;left:0px;top:0px;}
@@ -660,7 +660,7 @@ q:after
 {
 	width:16px;
 	height:100%;
-	background:url(img/panelVertical.png) repeat-y;
+	background:url(img/panelVertical.webp) repeat-y;
 	position:absolute;
 	top:0px;
 	bottom:0px;
@@ -678,7 +678,7 @@ q:after
 {
 	width:100%;
 	height:16px;
-	background:url(img/panelHorizontal.png) repeat-x;
+	background:url(img/panelHorizontal.webp) repeat-x;
 	position:absolute;
 	left:0px;
 	bottom:0px;
@@ -686,7 +686,7 @@ q:after
 
 .button
 {
-	background:#000 url(img/darkNoise.png);
+	background:#000 url(img/darkNoise.webp);
 	box-shadow:0px 0px 3px #666 inset,0px 0px 4px #000;
 	position:absolute;
 	z-index:100;
@@ -727,7 +727,7 @@ q:after
 	top:112px;
 	bottom:0px;
 	/*box-shadow:0px 0px 24px #000 inset;
-	background:#000 url(img/darkNoise.png);*/
+	background:#000 url(img/darkNoise.webp);*/
 }
 
 #comments
@@ -785,7 +785,7 @@ q:after
 	width:100%;
 	top:0px;
 	bottom:16px;
-	background:#000 url(img/mapBG.jpg) fixed;
+	background:#000 url(img/mapBG.webp) fixed;
 	display:none;
 }
 .row .specialButton
@@ -822,7 +822,7 @@ a.control
 	position:absolute;
 	width:48px;
 	height:48px;
-	background:url(img/control.png) no-repeat;
+	background:url(img/control.webp) no-repeat;
 	opacity:0.8;
 }
 a.control:hover{opacity:1;}
@@ -839,7 +839,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	overflow:hidden;
 	background:#00061b;
 }
-.map:after{content:'';pointer-events:none;display:block;position:absolute;left:0px;top:0px;width:144px;height:144px;z-index:100000;background:url(img/dungeonOverlay.png);}
+.map:after{content:'';pointer-events:none;display:block;position:absolute;left:0px;top:0px;width:144px;height:144px;z-index:100000;background:url(img/dungeonOverlay.webp);}
 .map .tile, .map .thing
 {
 	width:16px;
@@ -859,8 +859,8 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	transition: top 0.1s ease-out, left 0.1s ease-out;
 	*/
 }
-.map .tile {background:url(img/dungeonTiles.png) no-repeat;z-index:100;}
-.map .thing {background:url(img/dungeonIcons.png) no-repeat;z-index:200;}
+.map .tile {background:url(img/dungeonTiles.webp) no-repeat;z-index:100;}
+.map .thing {background:url(img/dungeonIcons.webp) no-repeat;z-index:200;}
 
 .dungeonName
 {
@@ -926,7 +926,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	left:0px;
 	top:0px;
 	height:100%;
-	background:url(img/hpBar.png) repeat-x;
+	background:url(img/hpBar.webp) repeat-x;
 	-webkit-transition: width 0.1s ease-out;
 	-moz-transition: width 0.1s ease-out;
 	-ms-transition: width 0.1s ease-out;
@@ -940,7 +940,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	left:15%;
 	bottom:4px;
 	height:8px;
-	background:url(img/hpmBar.png) repeat-x;
+	background:url(img/hpmBar.webp) repeat-x;
 	box-shadow:0px 0px 4px #000;
 }
 
@@ -967,7 +967,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	padding:8px;
 	font-size:12px;
 	line-height:125%;
-	background:url(img/infoBG.png);
+	background:url(img/infoBG.webp);
 	color:#666;
 	z-index:100000;
 }
@@ -978,7 +978,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	position:absolute;
 	right:-16px;
 	top:0px;
-	background:url(img/infoBGfade.png) repeat-y;
+	background:url(img/infoBGfade.webp) repeat-y;
 	display:block;
 	content:'';
 }
@@ -1028,7 +1028,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	width:300px;
 	position:relative;
 	overflow-y:hidden;
-	background:url(img/panelHorizontal.png) repeat-x top;
+	background:url(img/panelHorizontal.webp) repeat-x top;
 	padding-top:16px;
 }
 .storeSection:hover
@@ -1064,7 +1064,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	width:60px;
 	height:60px;
 	display:block;
-	background:url(img/upgradeFrame.png);
+	background:url(img/upgradeFrame.webp);
 	z-index:10;
 }
 .icon
@@ -1101,7 +1101,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	height:64px;
 	cursor:pointer;
 	opacity:0.6;
-	background:url(img/storeTile.jpg);
+	background:url(img/storeTile.webp);
 	position:relative;
 	-webkit-transition: opacity 0.25s ease-out, margin-bottom 0.1s ease-out;
 	-moz-transition: opacity 0.25s ease-out, margin-bottom 0.1s ease-out;
@@ -1205,7 +1205,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	-ms-transition: opacity 0.1s ease-out;
 	-o-transition: opacity 0.1s ease-out;
 	transition: opacity 0.1s ease-out;
-	background:url(img/darkNoise.png);
+	background:url(img/darkNoise.webp);
 	box-shadow:0px 0px 4px #000 inset;
 	z-index:1000;
 }
@@ -1237,7 +1237,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 {
 	width:96px;
 	height:96px;
-	background:url(img/goldCookie.png);
+	background:url(img/goldCookie.webp);
 	cursor:pointer;
 	position:absolute;
 	z-index:10000000000;
@@ -1248,7 +1248,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 {
 	width:256px;
 	height:256px;
-	background:url(img/goldCookie.png) center center no-repeat;
+	background:url(img/goldCookie.webp) center center no-repeat;
 	cursor:pointer;
 	position:absolute;
 	z-index:10000000000;
@@ -1374,7 +1374,7 @@ a.control.middle{left:48px;top:48px;background-position:-48px -48px;}
 	background:#000;
 	width:100%;
 	height:8px;
-	background:url(img/timerBars.png) 0px 0px;
+	background:url(img/timerBars.webp) 0px 0px;
 	box-shadow:-30px 0px 15px -15px #fff inset;
 }
 #timers>div#timer-frenzy{background-position:0px 0px;}
@@ -1463,7 +1463,7 @@ NEW AD DISPLAY
 	right:0px;
 	overflow-x:hidden;
 	width:160px;
-	background:url(img/darkNoise.png);
+	background:url(img/darkNoise.webp);
 }
 .separatorRight
 {
@@ -1532,7 +1532,7 @@ MOBILE
 	bottom:0px;
 	height:64px;
 	width:100%;
-	background:url(img/darkNoise.png);
+	background:url(img/darkNoise.webp);
 	z-index:1000000;
 	font-size:32px;
 }
@@ -1543,7 +1543,7 @@ MOBILE
 	position:absolute;
 	left:0px;
 	top:-16px;
-	background:url(img/blackGradient.png) repeat-x bottom;
+	background:url(img/blackGradient.webp) repeat-x bottom;
 	background-size:100% 100%;
 	width:100%;
 	height:16px;
@@ -1556,7 +1556,7 @@ MOBILE
 	height:50%;
 	cursor:pointer;
 	float:left;
-	background:url(img/buttonTile.jpg);
+	background:url(img/buttonTile.webp);
 	background-size:100% 400%;
 	padding:16px 0px;
 	text-align:center;
@@ -1589,7 +1589,7 @@ MOBILE
 	top:0px;
 	height:128px;
 	width:100%;
-	background:url(img/darkNoise.png);
+	background:url(img/darkNoise.webp);
 	z-index:1000000;
 	text-align:center;
 	font-size:16px;

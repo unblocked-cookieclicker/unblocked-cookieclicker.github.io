@@ -1169,7 +1169,7 @@ M.launch=function()
 				var str='<div style="padding:8px 4px;min-width:400px;">'+
 					'<div class="icon" style="background:url(img/gardenPlants.png?v='+Game.version+');float:left;margin-left:-24px;margin-top:-4px;background-position:'+(-0*48)+'px '+(-me.icon*48)+'px;"></div>'+
 					'<div class="icon" style="background:url(img/gardenPlants.png?v='+Game.version+');float:left;margin-left:-24px;margin-top:-28px;background-position:'+(-4*48)+'px '+(-me.icon*48)+'px;"></div>'+
-					'<div style="background:url(img/turnInto.png);width:20px;height:22px;position:absolute;left:28px;top:24px;z-index:1000;"></div>'+
+					'<div style="background:url(img/turnInto.webp);width:20px;height:22px;position:absolute;left:28px;top:24px;z-index:1000;"></div>'+
 					(me.plantable?('<div style="float:right;text-align:right;width:100px;"><small>Planting cost :</small><br><span class="price'+(M.canPlant(me)?'':' disabled')+'">'+Beautify(Math.round(shortenNumber(M.getCost(me))))+'</span><br><small>'+Game.sayTime(me.cost*60*30,-1)+' of CpS,<br>minimum '+Beautify(me.costM)+' cookies</small></div>'):'')+
 					'<div style="width:300px;"><div class="name">'+me.name+' seed</div><div><small>'+(me.plantable?'Click to select this seed for planting.':'<span class="red">This seed cannot be planted.</span>')+'<br>Shift+ctrl+click to harvest all mature plants of this type.</small></div></div>'+
 					'<div class="line"></div>'+
@@ -1588,7 +1588,7 @@ M.launch=function()
 		
 		var str='';
 		str+='<style>'+
-		'#gardenBG{background:url(img/shadedBorders.png),url(img/BGgarden.jpg);background-size:100% 100%,auto;position:absolute;left:0px;right:0px;top:0px;bottom:16px;}'+
+		'#gardenBG{background:url(img/shadedBorders.webp),url(img/BGgarden.webp);background-size:100% 100%,auto;position:absolute;left:0px;right:0px;top:0px;bottom:16px;}'+
 		'#gardenContent{position:relative;box-sizing:border-box;padding:4px 24px;height:'+(6*M.tileSize+16+48+48)+'px;}'+
 		'.gardenFrozen{box-shadow:0px 0px 16px rgba(255,255,255,1) inset,0px 0px 48px 24px rgba(200,255,225,0.5) inset;}'+
 		'#gardenPanel{text-align:center;margin:0px;padding:0px;position:absolute;left:4px;top:4px;bottom:4px;right:65%;overflow-y:auto;overflow-x:hidden;box-shadow:8px 0px 8px rgba(0,0,0,0.5);}'+
@@ -1598,7 +1598,7 @@ M.launch=function()
 		'.gardenTile{cursor:pointer;width:'+M.tileSize+'px;height:'+M.tileSize+'px;position:absolute;}'+
 		//'.gardenTile:before{transform:translate(0,0);pointer-events:none;content:\'\';display:block;position:absolute;left:0px;top:0px;right:0px;bottom:0px;margin:6px;border-radius:12px;background:rgba(0,0,0,0.1);box-shadow:0px 0px 4px rgba(255,255,255,0.2),-4px 4px 4px 2px rgba(0,0,0,0.2) inset;}'+
 		//'.gardenTile:hover:before{margin:2px;animation:wobble 0.5s;}'+
-		'.gardenTile:before{transform:translate(0,0);opacity:0.65;transition:opacity 0.2s;pointer-events:none;content:\'\';display:block;position:absolute;left:0px;top:0px;right:0px;bottom:0px;margin:0px;background:url(img/gardenPlots.png);}'+
+		'.gardenTile:before{transform:translate(0,0);opacity:0.65;transition:opacity 0.2s;pointer-events:none;content:\'\';display:block;position:absolute;left:0px;top:0px;right:0px;bottom:0px;margin:0px;background:url(img/gardenPlots.webp);}'+
 			'.gardenTile:nth-child(4n+1):before{background-position:40px 0px;}'+
 			'.gardenTile:nth-child(4n+2):before{background-position:80px 0px;}'+
 			'.gardenTile:nth-child(4n+3):before{background-position:120px 0px;}'+

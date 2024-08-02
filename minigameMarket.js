@@ -416,7 +416,7 @@ M.launch=function()
 		
 		var str='';
 		str+='<style>'+
-		'#bankBG{background:url('+Game.resPath+'img/shadedBorders.png),url('+Game.resPath+'img/BGmarket.jpg);background-size:100% 100%,auto;position:absolute;left:0px;right:0px;top:0px;bottom:16px;}'+
+		'#bankBG{background:url('+Game.resPath+'img/shadedBorders.webp),url('+Game.resPath+'img/BGmarket.webp);background-size:100% 100%,auto;position:absolute;left:0px;right:0px;top:0px;bottom:16px;}'+
 		'#bankContent{position:relative;box-sizing:border-box;padding:4px;text-align:center;}'+
 		
 		'.bankGood{margin:2px;display:inline-block;width:156px;text-align:center;position:relative;left:0px;top:0px;right:0px;box-sizing:border-box;box-shadow:0px 0px 0px 1px rgba(255,255,255,0.1), 2px 2px 4px rgba(0,0,0,0.5) inset;background:rgba(0,0,0,0.9);color:rgba(255,255,255,0.7);}'+
@@ -438,8 +438,8 @@ M.launch=function()
 		'#bankGraphBox{background:#fff;position:relative;z-index:5;overflow:hidden;height:300px;}'+
 		'.bankGraphIcon{position:absolute;right:-24px;top:-24px;z-index:10;transform:scale(0);transition:transform 0.3s;}'+
 		//'.bankViewHide{position:absolute;z-index:10;padding:4px;top:-2px;right:0px;}'+
-		'.bankViewHide{position:absolute;z-index:10;width:14px;height:14px;background:url('+Game.resPath+'img/tinyEyeOn.png);top:1px;right:4px;opacity:0.8;}'+
-		'.bankHidden .bankViewHide{background:url('+Game.resPath+'img/tinyEyeOff.png);}'+
+		'.bankViewHide{position:absolute;z-index:10;width:14px;height:14px;background:url('+Game.resPath+'img/tinyEyeOn.webp);top:1px;right:4px;opacity:0.8;}'+
+		'.bankHidden .bankViewHide{background:url('+Game.resPath+'img/tinyEyeOff.webp);}'+
 		'.bankSimpleButton{font-weight:bold;font-size:10px;cursor:pointer;text-decoration:underline;color:rgba(255,255,255,0.9);text-shadow:0px 1px #000;}'+
 		'.bankSimpleButton:hover{color:#fff;opacity:1;}'+
 		'.bankSimpleButton:active{opacity:0.5;}'+
