@@ -617,7 +617,7 @@ Game.Launch=function()
 		Game.Loader=new Loader();
 		Game.Loader.domain='img/';
 		Game.Loader.loaded=Game.Init;
-		Game.Loader.Load(['filler.png']);
+		Game.Loader.Load(['filler.webp']);
 	}
 	Game.ErrorFrame=function()
 	{
@@ -804,8 +804,8 @@ Game.Launch=function()
 			console.log('Loaded the mod '+url+', '+id+'.');
 		}
 		
-		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.png','imperfectCookie.png');
-		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.png']
+		//replacing an existing canvas picture with a new one at runtime : Game.Loader.Replace('perfectCookie.webp','imperfectCookie.webp');
+		//upgrades and achievements can use other pictures than icons.png; declare their icon with [posX,posY,'http://example.com/myIcons.webp']
 		//check out the "UNLOCKING STUFF" section to see how unlocking achievs and upgrades is done (queue yours in Game.customChecks)
 		//if you're making a mod, don't forget to add a Game.Win('Third-party') somewhere in there!
 		
@@ -2232,7 +2232,7 @@ Game.Launch=function()
 		Game.particles=[];
 		for (var i=0;i<50;i++)
 		{
-			Game.particles[i]={x:0,y:0,xd:0,yd:0,z:0,size:1,dur:2,life:-1,r:0,pic:'smallCookies.png',picId:0};
+			Game.particles[i]={x:0,y:0,xd:0,yd:0,z:0,size:1,dur:2,life:-1,r:0,pic:'smallCookies.webp',picId:0};
 		}
 		
 		Game.particlesUpdate=function()
@@ -2288,7 +2288,7 @@ Game.Launch=function()
 				me.dur=dur||2;
 				me.r=Math.floor(Math.random()*360);
 				me.picId=Math.floor(Math.random()*10000);
-				me.pic=pic||(Game.season=='fools'?'smallDollars.png':'smallCookies.png');
+				me.pic=pic||(Game.season=='fools'?'smallDollars.webp':'smallCookies.webp');
 				me.text=text||0;
 			}
 		}
@@ -3491,7 +3491,7 @@ Game.Launch=function()
 			this.icon=icon;
 			this.art=art;
 			if (art.base)
-			{art.pic=art.base+'.png';art.bg=art.base+'Background.png';}
+			{art.pic=art.base+'.webp';art.bg=art.base+'Background.webp';}
 			this.buyFunction=buyFunction;
 			this.locked=1;
 			this.vanilla=Game.vanilla;
@@ -3660,13 +3660,13 @@ Game.Launch=function()
 				var icon='';
 				if (typeof me.icon=='string')
 				{
-					icon=me.icon+'.png';
-					iconOff=me.icon+'Off.png';
+					icon=me.icon+'.webp';
+					iconOff=me.icon+'Off.webp';
 				}
 				else
 				{
-					icon=me.icon()+'.png';
-					iconOff=me.icon('off')+'Off.png';
+					icon=me.icon()+'.webp';
+					iconOff=me.icon('off')+'Off.webp';
 				}
 				var desc=me.desc;
 				var name=me.name;
@@ -3675,13 +3675,13 @@ Game.Launch=function()
 				{
 					if (!Game.foolIcons[me.name])
 					{
-						icon=Game.foolIcons['Unknown']+'.png';
+						icon=Game.foolIcons['Unknown']+'.webp';
 						name=Game.foolNames['Unknown'];
 						desc=Game.foolDescs['Unknown'];
 					}
 					else
 					{
-						icon=Game.foolIcons[me.name]+'.png';
+						icon=Game.foolIcons[me.name]+'.webp';
 						name=Game.foolNames[me.name];
 						desc=Game.foolDescs[me.name];
 					}
@@ -3786,7 +3786,7 @@ Game.Launch=function()
 					var h=Math.abs(Math.sin(Game.T*0.2+this.id*2))*0.3+0.7;
 					var x=64+Math.cos(Game.T*0.19+this.id*2)*8-24*w;
 					var y=128-Math.abs(Math.pow(Math.sin(Game.T*0.2+this.id*2),5)*16)-48*h;
-					ctx.drawImage(Pic('icons.png'),picX*48,picY*48,48,48,Math.floor(x),Math.floor(y),48*w,48*h);
+					ctx.drawImage(Pic('icons.webp'),picX*48,picY*48,48,48,Math.floor(x),Math.floor(y),48*w,48*h);
 					*/
 				}
 			}
@@ -3927,8 +3927,8 @@ Game.Launch=function()
 			if (Game.Has('Rainbow grandmas')) list.push('rainbowGrandma');
 			if (Game.season=='christmas') list.push('elfGrandma');
 			if (Game.season=='easter') list.push('bunnyGrandma');
-			return choose(list)+'.png';
-		},bg:'grandmaBackground.png',xV:8,yV:8,w:32,rows:3,x:0,y:16},100,function(){
+			return choose(list)+'.webp';
+		},bg:'grandmaBackground.webp',xV:8,yV:8,w:32,rows:3,x:0,y:16},100,function(){
 			var mult=0;
 			if (Game.Has('Farmer grandmas')) mult++;
 			if (Game.Has('Worker grandmas')) mult++;
@@ -5320,7 +5320,7 @@ Game.Launch=function()
 								var y=me.y+(Math.cos(me.r*Math.PI/180)*100);
 								for (var ii=0;ii<3;ii++)
 								{
-									Game.particleAdd(x+Math.random()*50-25,y+Math.random()*50-25,Math.random()*4-2,Math.random()*-2-2,1,1,2,'wrinklerBits.png');
+									Game.particleAdd(x+Math.random()*50-25,y+Math.random()*50-25,Math.random()*4-2,Math.random()*-2-2,1,1,2,'wrinklerBits.webp');
 								}
 							}
 							Game.Click=0;
@@ -5379,7 +5379,7 @@ Game.Launch=function()
 						var y=me.y+(Math.cos(me.r*Math.PI/180)*100);
 						for (var ii=0;ii<6;ii++)
 						{
-							Game.particleAdd(x+Math.random()*50-25,y+Math.random()*50-25,Math.random()*4-2,Math.random()*-2-2,1,1,2,'wrinklerBits.png');
+							Game.particleAdd(x+Math.random()*50-25,y+Math.random()*50-25,Math.random()*4-2,Math.random()*-2-2,1,1,2,'wrinklerBits.webp');
 						}
 					}
 				}
@@ -5401,8 +5401,8 @@ Game.Launch=function()
 					Game.LeftBackground.translate(me.x,me.y);
 					Game.LeftBackground.rotate(-(me.r)*Math.PI/180);
 					//Game.LeftBackground.fillRect(-50,-10,100,200);
-					if (Game.season=='christmas') Game.LeftBackground.drawImage(Pic('winterWrinkler.png'),-50,-10);
-					else Game.LeftBackground.drawImage(Pic('wrinkler.png'),-50,-10);
+					if (Game.season=='christmas') Game.LeftBackground.drawImage(Pic('winterWrinkler.webp'),-50,-10);
+					else Game.LeftBackground.drawImage(Pic('wrinkler.webp'),-50,-10);
 					//Game.LeftBackground.fillText(me.id+' : '+me.sucked,0,0);
 					Game.LeftBackground.restore();
 					if (me.phase==2 && Math.random()<0.1 && Game.prefs.particles)
@@ -5498,7 +5498,7 @@ Game.Launch=function()
 			var s=1;
 			if (Math.abs(Game.mouseX-x)<48 && Math.abs(Game.mouseY-y)<48)
 			{
-				Game.LeftBackground.drawImage(Pic('winterFrame.png'),x-48,y-48);
+				Game.LeftBackground.drawImage(Pic('winterFrame.webp'),x-48,y-48);
 				Game.LeftBackground.textAlign='center';
 				var tx=x+48+96;
 				if (Game.santaLevel<14)
@@ -5544,15 +5544,15 @@ Game.Launch=function()
 			Game.LeftBackground.save();
 			Game.LeftBackground.translate(x+Math.cos(Game.T*0.2)*4,y+48);
 			Game.LeftBackground.rotate(r);
-			Game.LeftBackground.drawImage(Pic('santa.png'),96*Game.santaLevel,0,96,96,-48*s,-96*s,96*s,96*s);
+			Game.LeftBackground.drawImage(Pic('santa.webp'),96*Game.santaLevel,0,96,96,-48*s,-96*s,96*s,96*s);
 			if (Game.santaTransition>0)
 			{
 				Game.LeftBackground.globalAlpha=1-Game.santaTransition/(Game.fps/2);
 				var s=1+(Game.santaTransition/(Game.fps/2));
-				Game.LeftBackground.drawImage(Pic('santa.png'),96*Math.max(0,Game.santaLevel-1),0,96,96,-48*s,-96*s,96*s,96*s);
+				Game.LeftBackground.drawImage(Pic('santa.webp'),96*Math.max(0,Game.santaLevel-1),0,96,96,-48*s,-96*s,96*s,96*s);
 			}
 			Game.LeftBackground.restore();
-			//Game.LeftBackground.drawImage(Game.Assets['santa.png'],96*(Math.floor(Game.T/Game.fps)%14),0,96,96,x-48,y-48,96,96);
+			//Game.LeftBackground.drawImage(Game.Assets['santa.webp'],96*(Math.floor(Game.T/Game.fps)%14),0,96,96,x-48,y-48,96,96);
 			
 		}
 		
@@ -5614,14 +5614,14 @@ Game.Launch=function()
 				var s2=512;if (Game.bgFade==Game.defaultBg) s2=600;
 				var x=0;
 				var y=0;
-				Game.Background.fillPattern(Pic(Game.bg+'.jpg'),x,y,Game.Background.canvas.width,Game.Background.canvas.height,s1,s1);
+				Game.Background.fillPattern(Pic(Game.bg+'.webp'),x,y,Game.Background.canvas.width,Game.Background.canvas.height,s1,s1);
 				if (Game.bgR>0)
 				{
 					Game.Background.globalAlpha=Game.bgR;
-					Game.Background.fillPattern(Pic(Game.bgFade+'.jpg'),x,y,Game.Background.canvas.width,Game.Background.canvas.height,s2,s2);
+					Game.Background.fillPattern(Pic(Game.bgFade+'.webp'),x,y,Game.Background.canvas.width,Game.Background.canvas.height,s2,s2);
 					Game.Background.globalAlpha=1;
 				}
-				Game.Background.drawImage(Pic('shadedBorders.png'),0,0,Game.Background.canvas.width,Game.Background.canvas.height);
+				Game.Background.drawImage(Pic('shadedBorders.webp'),0,0,Game.Background.canvas.width,Game.Background.canvas.height);
 			}
 			
 			//clear
@@ -5638,9 +5638,9 @@ Game.Launch=function()
 				var opacity=1;
 				if (Game.elderWrathD<=1.5)
 				{
-					if (Game.cookiesPs>=1000) pic='cookieShower3.png';
-					else if (Game.cookiesPs>=500) pic='cookieShower2.png';
-					else if (Game.cookiesPs>=50) pic='cookieShower1.png';
+					if (Game.cookiesPs>=1000) pic='cookieShower3.webp';
+					else if (Game.cookiesPs>=500) pic='cookieShower2.webp';
+					else if (Game.cookiesPs>=50) pic='cookieShower1.webp';
 					else pic='';
 				}
 				if (pic!='')
@@ -5657,7 +5657,7 @@ Game.Launch=function()
 					var y=(Math.floor(Game.T*2.5)%512);
 					Game.LeftBackground.globalAlpha=0.75;
 					Game.LeftBackground.globalCompositeOperation='lighter';
-					Game.LeftBackground.fillPattern(Pic('snow2.jpg'),0,-512+y,Game.LeftBackground.canvas.width,Game.LeftBackground.canvas.height+512,512,512);
+					Game.LeftBackground.fillPattern(Pic('snow2.webp'),0,-512+y,Game.LeftBackground.canvas.width,Game.LeftBackground.canvas.height+512,512,512);
 					Game.LeftBackground.globalCompositeOperation='source-over';
 					Game.LeftBackground.globalAlpha=1;
 				}
@@ -5666,7 +5666,7 @@ Game.Launch=function()
 				{
 					var y=(Math.floor(Game.T*2.5)%512);
 					Game.LeftBackground.globalAlpha=1;
-					Game.LeftBackground.fillPattern(Pic('heartStorm.png'),0,-512+y,Game.LeftBackground.canvas.width,Game.LeftBackground.canvas.height+512,512,512);
+					Game.LeftBackground.fillPattern(Pic('heartStorm.webp'),0,-512+y,Game.LeftBackground.canvas.width,Game.LeftBackground.canvas.height+512,512,512);
 					Game.LeftBackground.globalAlpha=1;
 				}
 				
@@ -5684,10 +5684,10 @@ Game.Launch=function()
 				Game.LeftBackground.translate(x,y);
 				Game.LeftBackground.rotate((r/360)*Math.PI*2);
 				Game.LeftBackground.globalAlpha=0.5;
-				Game.LeftBackground.drawImage(Pic('shine.png'),-s/2,-s/2,s,s);
+				Game.LeftBackground.drawImage(Pic('shine.webp'),-s/2,-s/2,s,s);
 				Game.LeftBackground.rotate((-r*2/360)*Math.PI*2);
 				Game.LeftBackground.globalAlpha=0.25;
-				Game.LeftBackground.drawImage(Pic('shine.png'),-s/2,-s/2,s,s);
+				Game.LeftBackground.drawImage(Pic('shine.webp'),-s/2,-s/2,s,s);
 				Game.LeftBackground.restore();
 				
 				
@@ -5703,10 +5703,10 @@ Game.Launch=function()
 				{
 					var nestW=304*0.98*Game.BigCookieSize;
 					var nestH=161*0.98*Game.BigCookieSize;
-					Game.LeftBackground.drawImage(Pic('nest.png'),-nestW/2,-nestH/2+130,nestW,nestH);
+					Game.LeftBackground.drawImage(Pic('nest.webp'),-nestW/2,-nestH/2+130,nestW,nestH);
 				}
 				//Game.LeftBackground.rotate(((Game.startDate%360)/360)*Math.PI*2);
-				Game.LeftBackground.drawImage(Pic('perfectCookie.png'),-s/2,-s/2,s,s);
+				Game.LeftBackground.drawImage(Pic('perfectCookie.webp'),-s/2,-s/2,s,s);
 				Game.LeftBackground.restore();
 			}
 			else
@@ -5716,13 +5716,13 @@ Game.Launch=function()
 				var x=Game.cookieOriginX-s/2;
 				var y=Game.cookieOriginY-s/2;
 				Game.LeftBackground.globalAlpha=0.5;
-				Game.LeftBackground.drawImage(Pic('shine.png'),x,y,s,s);
+				Game.LeftBackground.drawImage(Pic('shine.webp'),x,y,s,s);
 				//big cookie
 				Game.LeftBackground.globalAlpha=1;
 				var s=256*Game.BigCookieSize;
 				var x=Game.cookieOriginX-s/2;
 				var y=Game.cookieOriginY-s/2;
-				Game.LeftBackground.drawImage(Pic('perfectCookie.png'),x,y,s,s);
+				Game.LeftBackground.drawImage(Pic('perfectCookie.webp'),x,y,s,s);
 			}
 			
 			//debug
@@ -5760,7 +5760,7 @@ Game.Launch=function()
 					Game.LeftBackground.translate((Game.LeftBackground.canvas.width/2),(Game.LeftBackground.canvas.height*0.4));
 					Game.LeftBackground.rotate((r/360)*Math.PI*2);
 					
-					Game.LeftBackground.drawImage(Pic('cursor.png'),x,y);
+					Game.LeftBackground.drawImage(Pic('cursor.webp'),x,y);
 					Game.LeftBackground.restore();
 				}
 			}
@@ -5787,12 +5787,12 @@ Game.Launch=function()
 				var pic1=Game.MilkPics[m1i];
 				var pic2=Game.MilkPics[m2i];
 				Game.LeftBackground.globalAlpha=m1o*0.9;
-				Game.LeftBackground.fillPattern(Game.Assets[pic1+'.png'],-480+x,Game.LeftBackground.canvas.height-y,Game.LeftBackground.canvas.width+480,1,480,480);
+				Game.LeftBackground.fillPattern(Game.Assets[pic1+'.webp'],-480+x,Game.LeftBackground.canvas.height-y,Game.LeftBackground.canvas.width+480,1,480,480);
 				m2o=1-m1o;
 				if (m2o>0)
 				{
 					Game.LeftBackground.globalAlpha=m2o*0.9;
-					Game.LeftBackground.fillPattern(Game.Assets[pic2+'.png'],-480+x,Game.LeftBackground.canvas.height-y,Game.LeftBackground.canvas.width+480,1,480,480);
+					Game.LeftBackground.fillPattern(Game.Assets[pic2+'.webp'],-480+x,Game.LeftBackground.canvas.height-y,Game.LeftBackground.canvas.width+480,1,480,480);
 				}
 				*/
 				var pic=0;
@@ -5804,7 +5804,7 @@ Game.Launch=function()
 				else {pic=4;}
 				pic=Game.MilkPics[pic];
 				Game.LeftBackground.globalAlpha=0.9;
-				Game.LeftBackground.fillPattern(Pic(pic+'.png'),-480+x,height-y,width+480,1,480,480);
+				Game.LeftBackground.fillPattern(Pic(pic+'.webp'),-480+x,height-y,width+480,1,480,480);
 				
 				Game.LeftBackground.fillStyle='#000';
 				Game.LeftBackground.fillRect(0,height-y+480,width,Math.max(0,(y-480)));
@@ -5822,7 +5822,7 @@ Game.Launch=function()
 				Game.LeftBackground.save();
 				Game.LeftBackground.translate(x,y);
 				Game.LeftBackground.rotate((r/360)*Math.PI*2);
-				Game.LeftBackground.drawImage(Pic('smallCookies.png'),0,0,64,64,-32,-32,64,64);
+				Game.LeftBackground.drawImage(Pic('smallCookies.webp'),0,0,64,64,-32,-32,64,64);
 				Game.LeftBackground.restore();
 				*/
 				//draw the front part of the milk here
@@ -5835,9 +5835,9 @@ Game.Launch=function()
 			
 			//shiny border during frenzies etc
 			Game.LeftBackground.globalAlpha=1;
-			var borders='shadedBorders.png';
-			if (Game.clickFrenzy>0 || (Game.frenzy>0 && Game.frenzyPower>=1)) borders='shadedBordersGold.png';
-			else if (Game.frenzy>0) borders='shadedBordersRed.png';
+			var borders='shadedBorders.webp';
+			if (Game.clickFrenzy>0 || (Game.frenzy>0 && Game.frenzyPower>=1)) borders='shadedBordersGold.webp';
+			else if (Game.frenzy>0) borders='shadedBordersRed.webp';
 			Game.LeftBackground.drawImage(Pic(borders),0,0,Game.LeftBackground.canvas.width,Game.LeftBackground.canvas.height);
 			
 			if (Game.frenzy>0 && Game.frenzyPower>=100) {Game.timersEl['elderFrenzy'].style.width=((Game.frenzy/Game.frenzyMax)*100)+'%';Game.timersEl['elderFrenzy'].style.display='block';}
